@@ -64,7 +64,7 @@ class LedDisplay:
             kwargs = {'coldict': COL_DICT, 'title': self.image_dict[self.alias]}
             flatmat = pict.picture(**kwargs)
             self.sense.set_pixels(flatmat)
-            time.sleep(self.heartbeat)
+            time.sleep(self.duration)
 
 
 PATTERN_DICT    = {0: anim.mode_0, 1: anim.mode_1, 2: anim.mode_2}
