@@ -29,7 +29,8 @@ class LedDisplay:
                  alias: int = 0,
                  duration: int = 0,
                  low_light: bool = True,
-                 heartbeat: float = 0.1):
+                 heartbeat: float = 0.1,
+                 **kwargs):
         self.sense                      = SenseHat()
         self.sense.low_light            = low_light
         self.duration: int              = duration
