@@ -5,7 +5,7 @@ from setuptools import setup
 '''
 setup function to be run when creating packages for Organica
 command to be typed in:
-python setup.py sdist
+python setup.py sdist bdist_wheel
 '''
 # ATTENTION! Wheel file needed, depending on environment
 
@@ -19,6 +19,8 @@ setup(
     author='sziller',  # well obvious
     author_email='sziller@gmail.com',  # well obvious
     description='SenseHat mounted 8x8 sized LED-display',  # well obvious
-    install_requires=["sensehat_assist", "sense_emu", "sense_hat"],
+    install_requires=[
+        "sense_emu",
+        "sense_hat"],
     dependency_links=[],  # if dependent on external projects
 )
