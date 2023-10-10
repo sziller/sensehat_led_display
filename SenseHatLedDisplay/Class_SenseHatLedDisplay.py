@@ -14,9 +14,9 @@ except ImportError as e1:
     except ImportError as e2:
         raise DiEr.MissingDisplay()
 
-print("===========================")
-print("= using: {:^16} =".format({True: "SenseHat", False: "Emulator"}[LIVE]))
-print("===========================")
+print("====================================")
+print("= LedDisplay using: {:^14} =".format({True: "SenseHat", False: "Emulator"}[LIVE]))
+print("====================================")
 
 
 class LedDisplay:
